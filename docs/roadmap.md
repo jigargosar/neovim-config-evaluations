@@ -10,7 +10,7 @@ Evaluate my two Neovim configs and settle on one daily driver.
 
 ## Open blocker
 Treesitter parsers won't compile. Only `zig` (0.16) is available as a compiler,
-and the Windows user env `CC="zig cc"` has a space → `tree-sitter build` tries to
+and the Windows user env `CC="zig cc"` has a space → `tree-sitter build` tries tom
 spawn a program literally named `"zig cc"` → `ENOENT`.
 Fix: single-token `zig-cc` wrapper, point `CC` at it, rebuild lua/vimdoc/markdown.
 
