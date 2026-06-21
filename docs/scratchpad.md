@@ -1,5 +1,9 @@
 # Scratchpad — resume notes
 
+**Two tracks (don't conflate):**
+1. **Skill / CLAUDE.md development** (meta/tooling) — see "Modes idea" below + `docs/claude-md-eval.md`.
+2. **Vim / MiniMax learning** — Neovim config eval + `apps/tutorial/` (jump2d tutorial).
+
 **State (2026-06-21):** Neovim config eval in progress. Building a React tutorial
 app for Mini.jump2d; blocked on Treesitter parsers failing to compile (zig-cc
 wrapper fix pending — see roadmap "Open blocker").
