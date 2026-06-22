@@ -67,3 +67,6 @@ https://github.com/Aider-AI/aider.git
 10. Start the server
 11. Point tools at it: `ANTHROPIC_BASE_URL=http://localhost:8787`.
     
+vim.pack.add { { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } }
+vim.pack.add { { src = "https://github.com/folke/tokyonight.nvim", name = "tokyonight" } }
+
