@@ -1,10 +1,5 @@
 {
   "name": "neovim-config-evaluations",
   "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "pnpm --filter tutorial dev",
-    "build": "pnpm --filter tutorial build",
-    "preview": "pnpm --filter tutorial preview"
-  }
+  "version": "0.0.0"
 }
