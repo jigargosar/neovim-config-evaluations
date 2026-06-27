@@ -6,6 +6,8 @@ read `../CLAUDE.md`.
 
 ## Where we are now
 
+- **Phase 2 of 5** (generate first real demo — jump2d). Phase 1 (prove pipeline)
+  is done. See "Workflow → Phases" in `../CLAUDE.md`.
 - Format is decided: a data-driven **book** (demo visual + `:h` + quiz + cheatsheet).
 - Visual pipeline = **VHS in WSL2**. It is **proven for a trivial bash `echo` only**
   (`tools/vhs/hello.gif`). Rendering **real Neovim + a mini plugin is NOT yet

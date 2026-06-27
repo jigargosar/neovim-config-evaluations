@@ -51,3 +51,33 @@ rejected approaches: `docs/meta-tutorial-book.md`.
   as Windows `C:\...`.
 - General coding conventions (pnpm, TypeScript strictness, output style) come from
   the user's global `~/.claude` config, not this file.
+
+## Workflow
+
+**Environment split** (decided — do not migrate):
+
+- Editing, git, and Claude Code run on **Windows**; the repo stays on `C:\`.
+- Demo visuals are generated in **WSL2 Ubuntu** (it has `nvim`, `vhs`, `ttyd`,
+  `ffmpeg`). There is no need to move the repo into WSL or install Claude Code
+  there — this is a docs+scripts project; only generation needs Linux.
+- In WSL, `/mnt/c/...` is the same path as Windows `C:\...`, so scripts write
+  output straight into the repo and it's viewable on Windows.
+
+**Generation loop** (per demo):
+
+1. Write/adjust a `.tape` (plus any nvim init / sample buffer) under `tools/vhs/`.
+2. In a WSL terminal: `cd /mnt/c/Users/jigar/projects/neovim-config-evaluations/tools/vhs`
+   then `bash <script>.sh`.
+3. View the resulting gif/mp4 on Windows; iterate the tape timing until labels
+   and actions are readable.
+
+**Phases** (the learning tool):
+
+1. Prove the VHS-in-WSL2 pipeline. *(done — `tools/vhs/hello.gif`)*
+2. Generate one real plugin demo (jump2d) — proves real nvim + mini rendering.
+3. Write that chapter: visual + `:h` cross-refs + quiz + cheatsheet.
+4. Choose the book vehicle (markdown vs app) and generalize the chapter shape.
+5. Scale to the remaining modules.
+
+**Resuming a session:** read this file (what / why / workflow), then
+`docs/STATUS.md` for the current phase and next step.
